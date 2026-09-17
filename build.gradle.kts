@@ -80,9 +80,6 @@ subprojects {
     }
 
     configure<MavenPublishBaseExtension> {
-        publishToMavenCentral()
-        signAllPublications()
-
         coordinates(project.group.toString(), project.name, project.version.toString())
 
         pom {
